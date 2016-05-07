@@ -1,0 +1,159 @@
+@import url(http://allfont.ru/allfont.css?fonts=agavantgardecyr-book);
+@import url(reset.css);
+
+html,body {
+	font-family: 'AGAvantGardeCyr Book', arial;
+}
+
+/* Wrapper */
+#pagewidth {
+	width:850px;
+	text-align:left;
+	margin:0 auto;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {
+	display:inline-block;
+}
+* html .clearfix {
+	height:1%;
+}
+.clearfix {
+	display:block;
+}
+
+/* Global styles */
+.filled {
+	background-color: #003366;
+}
+
+/* Header*/
+#head {
+	height: 240px;
+	background-image: url(../img/background-city.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+#head #container {
+	width: 100%;
+	height: 100%;
+}
+#head #container .item {
+	position: relative;
+	width: 50%;
+	height: 100%;
+}
+#logo {
+	margin: 15px 28px 20px 20px;
+}
+#desc {
+	margin: 30px 0px 0px 20px;
+	color: #003366;
+	font-size: 18pt;
+	font-weight: 800;
+	list-style-image: url(../img/arrow-blue.png);
+}
+#searchBox {
+	margin: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#searchBox label {
+	color: #003366;
+	font-size: 18pt;
+	font-weight: 800;
+	font-stretch: ultra-condensed;
+}
+input[id="search"] {
+  width: 100px;
+  border: 2px solid #003366;
+}
+
+
+/* Line */
+.line {
+	height: 30px;
+	color: #fff;
+	font-size: 14pt;
+	font-weight: 600;
+    overflow: hidden;
+}
+.line li {
+	float: left;
+	margin: 5px 0 0 40px;
+}
+.left {
+	float:left;
+	position:relative;
+}
+.right {
+	float:right;
+	position:relative;
+}
+.contacts {
+	padding: 5px 40px;
+}
+
+/* Left Section */
+#leftcol{
+	width: 228px;
+	float: left;
+	position: relative;
+}
+.leftBlock {
+	margin: 5px 5px 5px 10px;
+	border: 4px solid #003366;
+	border-radius: 10px;
+}
+.leftBlock nav li {
+	margin: 15px 0 15px 40px;
+	font-size: 14pt;
+	font-weight: 600;
+}
+
+/* Main Section*/
+#maincol {
+	background-color:#FFFFFF;
+	position:relative;
+	width:622px;
+	min-height:400px;
+	float:right;
+}
+
+/* Footer */
+#foot {
+	height: 155px;
+	background-image: url(../img/background-scaffolding.png);
+	background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+/* Navigation */
+nav li a {
+	text-decoration: none;
+	color: #FFF;
+	padding: 8px 0px;
+	font-stretch: ultra-condensed;
+}
+nav  li {
+	list-style-image: url(../img/arrow-white.png);
+}
+nav  li:hover {
+	list-style-image: url(../img/arrow-yellow.png);
+}
+nav  li:hover a {
+	color: #ffff00;
+}
+nav li.current{
+	list-style-image: url(../img/arrow-yellow.png);
+}
+nav li.current a {
+	color: #ffff00;
+}
